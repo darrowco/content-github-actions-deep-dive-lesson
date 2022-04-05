@@ -1,4 +1,4 @@
-name: deploy my Lambda functions
+name: deploy my Lambda function
 
 on:
  push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out code
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
       - name: set up python on runner
         uses: actions/setup-python@v2
           python-version 3.8
